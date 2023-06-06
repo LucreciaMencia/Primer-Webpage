@@ -60,7 +60,7 @@ h2 {
     display: flex;
     padding: 10px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(230, 199, 161);
 }
 
 .navbar {
@@ -131,4 +131,19 @@ a {
         gap: 70px;
         font-size: 40px;
     }
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes>img {
+    width: 400px;
+    object-fit: scale-down;
+}
+
+footer {
+    height: 200px;
+    background-color: rgb(236, 192, 137);
 }
