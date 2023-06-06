@@ -2,12 +2,12 @@ function showAlert() {
     alert('Hola, sos genial!');
 }
 
-const form = document.getElementById('myForm');
+// const form = document.getElementById('myForm');
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    validateForm();
-});
+// form.addEventListener('submit', function (event) {
+//     event.preventDefault();
+//     validateForm();
+// });
 
 function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,7}$/
@@ -24,8 +24,12 @@ function validateForm() {
         alert('Correo electrónico enviado correctamente.');
     }
 }
-document.querySelector("button.button-menu-toggle")
-    .addEventListener("click", function () {
-        document.querySelector(".nav-links").
-            classList.toggle("nav-links-responsive")
-    })
+function abrirYCerrarMenu() {
+    console.log("ejecutando")
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("nav-links-responsive")
+}
+const botonMenu = document.querySelector("button.button-menu-toggle");
+
+botonMenu.addEventListener("click", abrirYCerrarMenu)
+
