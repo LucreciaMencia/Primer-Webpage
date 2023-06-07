@@ -1,12 +1,14 @@
 body {
     background-color: rgb(245, 248, 250);
     font-family: "Lexend Deca", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
     font-size: 36px;
     color: rgb(11, 132, 132);
-    border: 1.5px solid #eb5e28;
     width: fit-content;
     margin-left: 15%;
 }
